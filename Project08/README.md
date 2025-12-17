@@ -133,5 +133,3 @@ By combining **S3 Replication**, **Amazon EventBridge**, and **serverless proces
 
 ---
 
-## License
-MIT / Educational Use
