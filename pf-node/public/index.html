@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Plane Fighting Super Start - Tải game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tải game Plane Fighting Super Start - game bắn máy bay multiplayer của Nhóm 7, UIT NT106.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+</head>
+<body>
+	<!-- BANNER DO CHATGPT LÀM -->
+<!-- RIBBON DO CHATGPT LÀM (BÊN TRÁI) -->
+<div class="chatgpt-ribbon">
+    Web do ChatGPT làm
+</div>
+
+
+
+    <!-- NAVBAR -->
+    <header class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <div class="nav-logo-badge">PF</div>
+                <div>
+                    PLANE FIGHTING
+                    <div class="nav-logo-sub">Super Start • NT106 Project</div>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <button class="nav-link active" data-scroll="#top">Trang chủ</button>
+                <button class="nav-link" data-scroll="#about">Giới thiệu</button>
+                <button class="nav-link" data-scroll="#features">Tính năng</button>
+                <button class="nav-link" data-scroll="#leaderboard">Top rank</button>
+                <button class="nav-link" data-scroll="#download">Tải game</button>
+		<button class="nav-link" data-scroll="#workflow">Workflow</button> 
+		<button class="nav-link" data-scroll="#team">Nhóm phát triển</button>
+		<button class="nav-link" data-scroll="#giftcode">Giftcode</button>
+                <span class="nav-chip">Nhóm7 </span>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top" class="page">
+        <!-- HERO -->
+        <section class="section" id="hero">
+            <div class="hero">
+                <div>
+                    <div class="hero-badge-row">
+                        <div class="hero-badge">Multiplayer • LAN &amp; Cloud</div>
+                        <div class="hero-badge">Windows 10/11</div>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="hero-gradient">Plane Fighting Super Start</span><br>
+                        Game bắn máy bay multiplayer của bạn.
+                    </h1>
+
+                    <p class="hero-description">
+                        Điều khiển chiến đấu cơ, né đạn, bắn hạ đối thủ trong những màn đấu nảy lửa. 
+                        Tập trung vào trải nghiệm <strong>multiplayer LAN</strong> và <strong>AWS cloud backend</strong> 
+                        để showcase đồ án Lập trình mạng căn bản.
+                    </p>
+
+                    <div class="hero-download-row">
+                        <!-- Nhớ giữ đúng tên file zip -->
+                        <a class="btn-primary" href="planfighting.msi.zip" download>
+                            ⬇ Tải game cho Windows
+                        </a>
+
+                        <button class="btn-secondary" data-scroll="#download">
+                            Xem thêm tuỳ chọn
+                        </button>
+                    </div>
+
+                    <p class="hero-note">
+                        Nếu trình duyệt không tải được, hãy bấm chuột phải vào nút tải → <strong>Save link as...</strong>
+                    </p>
+
+                    <div class="hero-meta-row">
+                        <div class="hero-meta-pill">
+                            <span class="hero-meta-dot"></span>
+                            v1.0.0 • Build đồ án NT106
+                        </div>
+                        <div class="hero-meta-pill">
+                            🔐 Server: API Gateway + Lambda + DynamoDB
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero card right -->
+                <aside class="hero-card">
+                    <span class="badge-corner">Lobby &amp; Ranking</span>
+
+                    <div class="mini-label">Thông tin build</div>
+                    <div class="mini-value">Plane Fighting Super Start • Windows Setup</div>
+
+                    <div class="hero-card-grid">
+                        <div>
+                            <div class="hero-stat-grid">
+                                <div class="stat-chip">
+                                    <strong>Điều khiển</strong>
+                                    ↑ ↓ ← →, Space bắn
+                                </div>
+                                <div class="stat-chip">
+                                    <strong>Chế độ</strong>
+                                    Solo, 1v1 qua LAN
+                                </div>
+                                <div class="stat-chip">
+                                    <strong>Dữ liệu</strong>
+                                    Lưu tài khoản &amp; rank trên cloud
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mini-label">Kích thước</div>
+                            <div class="mini-value">
+                                ~ 40 MB (.zip) <br>
+                                Cài xong <span class="text-accent-soft">chỉ ~100 MB</span>
+                            </div>
+
+                            <div class="mini-label" style="margin-top:10px;">Tình trạng</div>
+                            <div class="mini-value">
+                                <span class="status-dot"></span> Sẵn sàng tải
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-plane">
+                        <div class="hero-plane-title">Phong cách cyber arcade</div>
+                        <div class="hero-plane-sub">Giao diện phỏng theo cockpit máy bay chiến đấu, tông teal + navy.</div>
+
+                        <div class="plane-art">
+                            <div class="plane-art-bg"></div>
+                            <div class="plane-art-grid">
+                                <div class="plane-art-main">
+                                    <div class="plane-tag">
+                                        ✈ PF-01 • Jet fighter
+                                    </div>
+                                    <div class="plane-line"></div>
+                                    <div class="plane-stat">
+                                        Damage: ★★★★☆ • Speed: ★★★★★ • HP: ★★★☆☆
+                                    </div>
+                                    <div class="plane-mini-bars">
+                                        <div class="plane-mini-bar"></div>
+                                        <div class="plane-mini-bar low"></div>
+                                        <div class="plane-mini-bar lower"></div>
+                                    </div>
+                                </div>
+                                <div class="plane-art-main">
+                                    <div class="plane-stat">
+                                        Host &amp; Client cùng góc nhìn từ dưới lên, dễ theo dõi đường đạn của nhau.
+                                        Thiết kế tối ưu cho màn hình 16:9.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="section-title">
+                Giới thiệu
+                <span>About the game</span>
+            </div>
+            <p class="section-sub">
+                <strong>Plane Fighting Super Start</strong> là đồ án cuối kỳ môn 
+                <strong>Lập trình mạng căn bản (NT106)</strong> – 
+                một game bắn máy bay 2D phong cách arcade, 
+                hỗ trợ chơi đơn &amp; đấu 1 vs 1 qua LAN hoặc backend AWS.
+            </p>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">Dành cho kiểm thử &amp; demo</div>
+                    <p>
+                        Trang này được tạo chỉ để <strong>phát hành file cài đặt</strong> 
+                        cho giảng viên, bạn bè và người dùng thử. 
+                        Không có quảng cáo, không tracking rối rắm.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Code backend chuẩn AWS</div>
+                    <p>
+                        Tài khoản, bảng xếp hạng, lịch sử trận đấu lưu trên 
+                        <strong>API Gateway + Lambda + DynamoDB + S3</strong>, 
+                        có thể scale lên nhiều người chơi nếu cần.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Giao diện WinForms tối ưu</div>
+                    <p>
+                        UI được thiết kế với tông màu teal cyber, 
+                        có menu, lobby, chat, đổi máy bay, rank… 
+                        để thể hiện đủ kỹ năng UI/UX và lập trình mạng.
+                    </p>
+                </div>
+            </div>
+        </section>
+	<!-- GIFTCODE SECTION -->
+<section class="section" id="giftcode">
+    <div class="section-title">
+        Giftcode
+        <span>Code cho người chơi</span>
+    </div>
+
+    <p class="section-sub">
+        Những giftcode đang có hiệu lực trong hệ thống 
+        <code></code>.
+    </p>
+
+    <div class="giftcode-card">
+        <div id="giftcode-loading" class="giftcode-status">Đang tải danh sách giftcode...</div>
+        <div id="giftcode-error" class="giftcode-status giftcode-status-error" hidden>
+            Không lấy được dữ liệu giftcode.
+        </div>
+
+        <ul id="giftcode-list" class="giftcode-list"></ul>
+    </div>
+</section>
+
+        <!-- FEATURES -->
+        <section class="section" id="features">
+            <div class="section-title">
+                Tính năng chính
+                <span>Game features</span>
+            </div>
+
+            <p class="section-sub">
+                Một số điểm nhấn chính mà bọn mình muốn showcase trong đồ án:
+            </p>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">1. Multiplayer qua LAN &amp; Cloud</div>
+                    <p>
+                        Kết nối đối thủ trong cùng mạng LAN, 
+                        hoặc qua Internet thông qua backend AWS. 
+                        Đồng bộ trạng thái máy bay, đạn bay, HP theo thời gian (gần) thực.
+                    </p>
+                    <div class="card-pill-row">
+                        <span class="pill">UDP / TCP</span>
+                        <span class="pill">AWS API Gateway</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">2. Hệ thống tài khoản &amp; rank</div>
+                    <p>
+                        Đăng ký / đăng nhập tài khoản, lưu trữ trên DynamoDB, 
+                        có bảng xếp hạng, lịch sử trận đấu để giảng viên dễ kiểm tra.
+                    </p>
+                    <div class="card-pill-row">
+                        <span class="pill">DynamoDB</span>
+                        <span class="pill">JWT / token</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">3. Tùy biến máy bay &amp; avatar</div>
+                    <p>
+                        Người chơi chọn skin máy bay, avatar, hiển thị trên menu và trong trận. 
+                        Asset được tải từ S3 (nếu có mạng) hoặc fallback local.
+                    </p>
+                    <div class="card-pill-row">
+                        <span class="pill">S3 asset</span>
+                        <span class="pill">WinForms UI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERBOARD (TOP 3) -->
+        <section class="section" id="leaderboard">
+            <div class="section-title">
+                Bảng vinh danh Top 3
+                <span>Live leaderboard</span>
+            </div>
+
+            <p class="section-sub">
+                Top 3 người chơi có thành tích cao nhất, dữ liệu đọc trực tiếp từ API:
+                <code>/get</code> trên AWS API Gateway.
+            </p>
+
+            <div class="leaderboard-card">
+                <div id="rank-loading" class="rank-status">Đang tải dữ liệu xếp hạng...</div>
+                <div id="rank-error" class="rank-status rank-status-error" hidden>
+                    Không lấy được dữ liệu từ API. Vui lòng thử lại sau.
+                </div>
+
+                <ol id="top-rank-list" class="rank-list">
+                    <!-- JS sẽ render 3 người top ở đây -->
+                </ol>
+
+                <div class="rank-note">
+                    * Dữ liệu được lấy trực tiếp từ API:
+                    <span class="rank-api-url">/get (ap-southeast-1)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD SECTION -->
+        <section class="section" id="download">
+            <div class="section-title">
+                Tải game
+                <span>Download</span>
+            </div>
+
+            <p class="section-sub">
+                Đây là khu vực tải file setup chính thức của Plane Fighting Super Start.
+            </p>
+
+            <div class="download-grid">
+                <div class="download-card-main">
+                    <div class="download-label">File chính</div>
+                    <div class="download-value"><strong>planfighting.msi.zip</strong> • Windows setup</div>
+
+                    <div class="download-main-btn">
+                        <a class="btn-primary" href="planfighting.msi.zip" download>
+                            ⬇ Tải file setup
+                        </a>
+                    </div>
+
+                    <div class="download-status">
+                        <span class="status-dot"></span>
+                        File được host trên <strong>Firebase Hosting</strong>, tốc độ ổn định cho demo &amp; kiểm thử.
+                    </div>
+
+                    <div class="download-hint">
+                        Nếu tải chậm, hãy thử dùng trình duyệt khác hoặc mạng khác. File khá nhỏ nên thường chỉ mất vài giây.
+                    </div>
+                </div>
+
+                <aside class="download-card-side">
+                    <div class="download-label">Thông tin thêm</div>
+                    <div class="download-row">
+                        <span>Phiên bản</span>
+                        <span>v1.0.0 (demo)</span>
+                    </div>
+                    <div class="download-row">
+                        <span>Cập nhật gần nhất</span>
+                        <span>Nov 2025</span>
+                    </div>
+                    <div class="download-row">
+                        <span>Ngôn ngữ</span>
+                        <span>Tiếng Việt</span>
+                    </div>
+
+                    <div class="mirrors-list">
+                        <div class="mirror-item">
+                            <span>Link chính (Firebase)</span>
+                            <span class="badge-mirror">Stable</span>
+                        </div>
+                        <div class="mirror-item">
+                            <span>Link backup (tự thêm sau)</span>
+                            <span class="badge-mirror badge-mirror-soon">
+                                Coming soon
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="download-side-note">
+                                            </div>
+                </aside>
+            </div>
+        </section>
+	        <!-- WORKFLOW -->
+        <section class="section" id="workflow">
+            <div class="section-title">
+                Workflow hệ thống
+                <span>System &amp; gameplay flow</span>
+            </div>
+
+            <p class="section-sub">
+                Sơ đồ dưới đây mô tả luồng hoạt động chính của Plane Fighting Super Start:
+                từ lúc người chơi mở game, đăng nhập, join phòng, cho tới khi gọi API trên AWS
+                để lưu kết quả &amp; xếp hạng.
+            </p>
+
+            <div class="workflow-grid">
+                <!-- Cột mô tả -->
+                <div class="workflow-legend">
+                    <div class="workflow-step">
+                        <div class="workflow-step-title">1. Đăng nhập &amp; tải dữ liệu</div>
+                        <div class="workflow-step-desc">
+                            Client WinForms gọi API <strong>Login</strong> trên API Gateway,
+                            Lambda đọc/ghi tài khoản trong DynamoDB, trả về token &amp; thông tin account.
+                        </div>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="workflow-step-title">2. Lập phòng &amp; matchmaking</div>
+                        <div class="workflow-step-desc">
+                            Host tạo phòng, client khác join qua LAN / cloud room;
+                            server cập nhật trạng thái phòng &amp; người chơi.
+                        </div>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="workflow-step-title">3. Trận đấu &amp; đồng bộ trạng thái</div>
+                        <div class="workflow-step-desc">
+                            Máy bay, đạn, HP được đồng bộ qua socket/LAN;
+                            kết thúc trận, client gửi kết quả lên API <strong>UpdateRank</strong>.
+                        </div>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="workflow-step-title">4. Lưu rank &amp; hiển thị leaderboard</div>
+                        <div class="workflow-step-desc">
+                            Lambda cập nhật bảng <strong>ranking</strong> trong DynamoDB,
+                            API <code>/get</code> trả về danh sách,
+                            web tĩnh và game đều đọc để hiển thị top người chơi.
+                        </div>
+                    </div>
+
+                    <div class="workflow-download">
+                        <a class="btn-secondary" href="workflow.png" download>
+                            ⬇ Tải sơ đồ dạng ảnh
+                        </a>
+                        <!-- Nếu muốn cho GV tải file gốc -->
+                        <a class="btn-secondary" href="Untitled Diagram.drawio" download>
+                            ⬇ Tải file .drawio
+                        </a>
+                    </div>
+                </div>
+		<div class="workflow-diagram-frame">
+  <svg class="workflow-svg" viewBox="0 0 170 60" preserveAspectRatio="xMidYMid meet">
+    
+    <g class="wf-node wf-node--client" transform="translate(8,10)">
+      <rect x="0" y="0" width="26" height="26" rx="4" ry="4" class="wf-node-bg" />
+      <image href="./assets/client.png" x="3" y="3" width="20" height="20"/>
+      <text x="13" y="34" class="wf-node-label">Client</text>
+    </g>
+
+    <g class="wf-node wf-node--api" transform="translate(42,10)">
+      <rect x="0" y="0" width="26" height="26" rx="4" ry="4" class="wf-node-bg" />
+      <image href="./assets/api_gw.png" x="3" y="3" width="20" height="20"/>
+      <text x="13" y="34" class="wf-node-label">API GW</text>
+    </g>
+
+    <g class="wf-node wf-node--lambda" transform="translate(80,10)">
+      <rect x="0" y="0" width="26" height="26" rx="4" ry="4" class="wf-node-bg" />
+      <image href="./assets/lambda.png" x="3" y="3" width="20" height="20"/>
+      <text x="13" y="34" class="wf-node-label">Lambda</text>
+    </g>
+
+    <g class="wf-node wf-node--dynamo" transform="translate(118,10)">
+      <rect x="0" y="0" width="26" height="26" rx="4" ry="4" class="wf-node-bg" />
+      <image href="./assets/dynamodb.png" x="3" y="3" width="20" height="20"/>
+      <text x="13" y="34" class="wf-node-label">DynamoDB</text>
+    </g>
+
+    <path id="wf-client-api" class="wf-path" d="M34 23 H 42" />
+    <path id="wf-api-lambda" class="wf-path" d="M68 23 H 80" />
+    <path id="wf-lambda-ddb" class="wf-path" d="M106 23 H 118" />
+
+    <circle class="wf-packet" r="1.1"><animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#wf-client-api" /></animateMotion></circle>
+    <circle class="wf-packet" r="1.1" style="animation-delay: 1s;"><animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#wf-client-api" /></animateMotion></circle>
+
+    <circle class="wf-packet" r="1.1"><animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#wf-api-lambda" /></animateMotion></circle>
+    <circle class="wf-packet" r="1.1" style="animation-delay: 1s;"><animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#wf-api-lambda" /></animateMotion></circle>
+
+    <circle class="wf-packet" r="1.1"><animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#wf-lambda-ddb" /></animateMotion></circle>
+    <circle class="wf-packet" r="1.1" style="animation-delay: 1s;"><animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#wf-lambda-ddb" /></animateMotion></circle>
+  </svg>
+</div>
+
+
+                <!-- Cột hình -->
+                <section id="workflow" 
+                    <div class="workflow-caption">
+                        Sơ đồ được thiết kế bằng draw.io, thể hiện rõ biên giới giữa
+                        <strong>Client game</strong>, <strong>Backend AWS</strong> và <strong>DynamoDB / S3</strong>.
+                    </div>
+                </div>
+            </div>
+        </section>
+	<section class="section" id="team">
+            <div class="section-title">
+                Nhóm phát triển
+                <span>Development team</span>
+            </div>
+
+            <p class="section-sub">
+                Đồ án Plane Fighting Super Start được thực hiện bởi Nhóm 7 – sinh viên
+                ngành Mạng máy tính &amp; Truyền thông, UIT.
+            </p>
+
+            <div class="team-grid">
+                <!-- Thành viên 1 -->
+                <div class="team-card">
+                    <div class="team-avatar-wrap">
+                        <img src="anh1.png" alt="Thành viên 1" class="team-avatar">
+                    </div>
+                    <div class="team-name">Nguyễn Ngọc Minh</div>
+                    <div class="team-role">Nhóm trưởng • Backend + AWS </div>
+                    <div class="team-desc">
+                        Thiết kế kiến trúc cloud, API Gateway, Lambda, DynamoDB,
+                        tích hợp với game C# WinForms.
+			Xử lý logic bắn súng, đồng bộ máy bay/đạn, lobby LAN,
+                        tối ưu trải nghiệm người chơi.
+                    </div>
+                </div>
+
+                <!-- Thành viên 2 -->
+                <div class="team-card">
+                    <div class="team-avatar-wrap">
+                        <img src="anh2.png" alt="Thành viên 2" class="team-avatar">
+                    </div>
+                    <div class="team-name">Nguyễn Minh Nhật</div>
+                    <div class="team-role">Gameplay &amp Packaging</div>
+                    <div class="team-desc">
+                        Thiết kế giao diện WinForms, phối màu cyber,
+                        đóng gói game thành file cài đặt .msi/.zip.
+			Thiết kế kiến trúc cloud, API Gateway, Lambda, DynamoDB,
+                        tích hợp với game C# WinForms.
+                    </div>
+                </div>
+
+                <!-- Thành viên 3 -->
+                <div class="team-card">
+                    <div class="team-avatar-wrap">
+                        <img src="anh3.png" alt="Thành viên 3" class="team-avatar">
+                    </div>
+                    <div class="team-name">Nguyễn Trung Kiên</div>
+                    <div class="team-role">UI/UX &amp  Packaging</div>
+                    <div class="team-desc">
+			Xử lý logic bắn súng, đồng bộ máy bay/đạn, lobby LAN,
+                        tối ưu trải nghiệm người chơi.
+                        Thiết kế giao diện WinForms.
+			Thiết kế kiến trúc cloud, API Gateway, Lambda, DynamoDB,
+                        tích hợp với game C# WinForms.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div>
+                © 2025 • <strong>Plane Fighting Super Start</strong> • Đồ án Lập trình mạng căn bản (NT106).
+            </div>
+		
+            <div>
+                Made with ❤️ bởi <strong>Nhóm 7 (Minh – Nhật – Kiên)</strong>.
+            </div>
+        </footer>
+    </main>
+
+    <!-- SCROLL TOP BUTTON -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Lên đầu trang">↑</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
